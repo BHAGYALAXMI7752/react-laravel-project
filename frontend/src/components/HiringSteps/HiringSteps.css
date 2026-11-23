@@ -1,0 +1,141 @@
+
+.hiring-steps-section {
+  padding: 25px 0 40px;
+  background: #ffffff;
+}
+
+.hiring-steps-container {
+  max-width: 1050px;
+}
+
+.hiring-steps-heading {
+  margin-bottom: 20px;
+}
+
+.hiring-steps-heading h2 {
+  margin: 0 0 6px;
+  color: #171d31;
+  font-size: 20px;
+  font-weight: 850;
+  letter-spacing: -.5px;
+}
+
+.hiring-steps-heading p {
+  margin: 0;
+  color: #8490a4;
+  font-size: 10px;
+}
+
+.hiring-step-card {
+  position: relative;
+  padding: 15px;
+  border: 1px solid #edf0f6;
+  border-radius: 13px;
+  background: #f9faff;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.hiring-step-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 20px rgba(42, 48, 90, .07);
+}
+
+.hiring-step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.hiring-step-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 11px;
+  background: #efedff;
+  color: #7463e5;
+  font-size: 16px;
+}
+
+.hiring-step-number {
+  color: #c0c4d2;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.hiring-step-card h5 {
+  margin: 0 0 6px;
+  color: #252b40;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.hiring-step-card p {
+  margin: 0;
+  color: #8490a4;
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+/* Dark mode */
+
+body.dark-theme .hiring-steps-section {
+  background: #0d1425;
+}
+
+body.dark-theme .hiring-steps-heading h2 {
+  color: #f1f2ff;
+}
+
+body.dark-theme .hiring-steps-heading p {
+  color: #9ba5ba;
+}
+
+body.dark-theme .hiring-step-card {
+  border-color: #222d43;
+  background: #111a2b;
+}
+
+body.dark-theme .hiring-step-card h5 {
+  color: #f0f2ff;
+}
+
+body.dark-theme .hiring-step-card p,
+body.dark-theme .hiring-step-number {
+  color: #9ba5ba;
+}
+
+body.dark-theme .hiring-step-icon {
+  background: #25234b;
+  color: #a49aff;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  margin-bottom: 9px;
+  padding: 5px 13px;
+  border: 1px solid #dcd8fa;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #7164dc;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+body.dark-theme .section-eyebrow {
+  border-color: #30345a;
+  background: #11182b;
+  color: #9b91ff;
+}
+
+@media (max-width: 575.98px) {
+  .hiring-steps-heading h2 {
+    font-size: 17px;
+  }
+
+  .hiring-step-card {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,125 @@
+
+.why-choose-section {
+  padding: 32px 0 45px;
+  background: #f7f8fc;
+}
+
+.why-container {
+  max-width: 1050px;
+}
+
+.section-heading {
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.section-eyebrow {
+  display: inline-block;
+  margin-bottom: 9px;
+  padding: 5px 13px;
+  border: 1px solid #dcd8fa;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #7164dc;
+  font-size: 8px;
+  font-weight: 800;
+}
+
+.section-heading h2 {
+  margin-bottom: 6px;
+  color: #171d31;
+  font-size: 23px;
+  font-weight: 850;
+  letter-spacing: -.7px;
+}
+
+.section-heading p {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #788398;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.why-feature-card {
+  min-height: 145px;
+  padding: 20px;
+  border: 1px solid #e3e6ef;
+  border-radius: 17px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(30, 39, 70, .035);
+  transition: transform .3s ease, box-shadow .2s ease;
+}
+
+.why-feature-card:hover {
+  background: #eaecf224;
+  border-color: #8a7be7;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(30, 39, 70, .08);
+}
+
+.why-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  margin-bottom: 12px;
+  border-radius: 13px;
+  background: #efedff;
+  color: #6d61e7;
+  font-size: 19px;
+}
+
+.why-feature-card h5 {
+  margin-bottom: 7px;
+  color: #1c2235;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.why-feature-card p {
+  margin: 0;
+  color: #778197;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+/* Dark mode */
+
+body.dark-theme .why-choose-section {
+  background: linear-gradient(180deg, #080c19, #0d1425);
+}
+
+body.dark-theme .section-eyebrow {
+  border-color: #30345a;
+  background: #11182b;
+  color: #9b91ff;
+}
+
+body.dark-theme .section-heading h2 {
+  color: #f1f2ff;
+}
+
+body.dark-theme .section-heading p {
+  color: #9ba5ba;
+}
+
+body.dark-theme .why-feature-card {
+  border-color: #222d43;
+  background: #111a2b;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+body.dark-theme .why-feature-card h5 {
+  color: #f0f2ff;
+}
+
+body.dark-theme .why-feature-card p {
+  color: #9ba5ba;
+}
+
+body.dark-theme .why-feature-icon {
+  background: #1d2343;
+  color: #8980ff;
+}

@@ -1,0 +1,50 @@
+
+.company-logos-section {
+  padding: 15px 0 16px;
+  border-bottom: 1px solid #e7eaf1;
+  background: #ffffff;
+}
+
+.company-logos-heading {
+  margin: 0 0 10px;
+  color: #8791a5;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.company-logos-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.company-logo-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #778397;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.company-logo-item i {
+  font-size: 11px;
+}
+
+body.dark-theme .company-logos-section {
+  border-color: #293149;
+  background: #10182b;
+}
+
+body.dark-theme .company-logos-heading,
+body.dark-theme .company-logo-item {
+  color: #9ba5ba;
+}
+
+@media (max-width: 575.98px) {
+  .company-logos-list { gap: 13px 19px; }
+  .company-logo-item { font-size: 10px; }
+}

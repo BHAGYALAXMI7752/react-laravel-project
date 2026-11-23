@@ -1,0 +1,254 @@
+
+.featured-opportunities-section {
+  padding: 24px 0 35px;
+  background: #f7f8fc;
+}
+
+.featured-container {
+  max-width: 1050px;
+}
+
+.featured-heading {
+  margin-bottom: 12px;
+}
+
+.featured-heading h2 {
+  margin: 0 0 4px;
+  color: #171d31;
+  font-size: 21px;
+  font-weight: 850;
+  letter-spacing: -.6px;
+}
+
+.featured-heading p {
+  margin: 0;
+  color: #8490a4;
+  font-size: 10px;
+}
+
+.featured-view-all {
+  padding-top: 5px;
+  color: #7061e5;
+  font-size: 9px;
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.featured-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.featured-filter {
+  padding: 6px 12px;
+  border: 1px solid #e5e7ef;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #778197;
+  font-size: 9px;
+  font-weight: 700;
+  transition: .2s ease;
+}
+
+.featured-filter:hover {
+  border-color: #8a7be7;
+  border-color: #a89bf1;
+  color: #6d61e7;
+}
+
+.featured-filter.active {
+  border-color: #7061e5;
+  background: #7061e5;
+  color: #ffffff;
+}
+
+.featured-job-card {
+  padding: 14px;
+  border: 1px solid #e8eaf1;
+  border-radius: 13px;
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(30, 39, 70, .035);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.featured-job-card:hover {
+  background: #eaecf224;
+  border-color: #8a7be7;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(30, 39, 70, .08);
+}
+
+.featured-job-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.featured-company-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 850;
+}
+
+.featured-company-logo.google { background: #e9edff; color: #5574dc; }
+.featured-company-logo.microsoft { background: #e4f8f0; color: #25a97c; }
+.featured-company-logo.amazon { background: #fff0e4; color: #e98d42; }
+.featured-company-logo.meta { background: #e8f3ff; color: #3988db; }
+.featured-company-logo.adobe { background: #fff0ed; color: #e45d4e; }
+.featured-company-logo.job-hiring { background: #eeeaff; color: #7659dc; }
+
+.featured-save-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid #e9eaf0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #8b93a4;
+  font-size: 12px;
+}
+
+.featured-save-button.saved {
+  border-color: #d8d0ff;
+  background: #f0edff;
+  color: #705fe0;
+}
+
+.featured-job-card h3 {
+  margin: 0 0 4px;
+  color: #22283c;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.featured-company-name {
+  margin: 0 0 10px;
+  color: #8992a5;
+  font-size: 9px;
+}
+
+.featured-job-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 13px;
+}
+
+.featured-job-tags span {
+  padding: 4px 7px;
+  border-radius: 5px;
+  background: #f0f2f8;
+  color: #69758b;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.featured-job-bottom {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  padding-top: 10px;
+  border-top: 1px solid #edf0f5;
+}
+
+.featured-job-bottom strong {
+  color: #252b40;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.featured-job-bottom span {
+  color: #929bad;
+  font-size: 8px;
+}
+
+.featured-empty-message {
+  padding: 25px;
+  color: #8992a5;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Dark mode */
+
+body.dark-theme .featured-opportunities-section {
+  background: #080c19;
+}
+
+body.dark-theme .featured-heading h2 {
+  color: #f1f2ff;
+}
+
+body.dark-theme .featured-heading p {
+  color: #9ba5ba;
+}
+
+body.dark-theme .featured-filter {
+  border-color: #293149;
+  background: #111a2b;
+  color: #a4aec2;
+}
+
+body.dark-theme .featured-filter.active {
+  border-color: #7061e5;
+  background: #7061e5;
+  color: #ffffff;
+}
+
+body.dark-theme .featured-job-card {
+  border-color: #222d43;
+  background: #111a2b;
+  box-shadow: none;
+}
+
+body.dark-theme .featured-job-card h3,
+body.dark-theme .featured-job-bottom strong {
+  color: #f0f2ff;
+}
+
+body.dark-theme .featured-company-name,
+body.dark-theme .featured-job-bottom span {
+  color: #9ba5ba;
+}
+
+body.dark-theme .featured-job-tags span {
+  background: #202a40;
+  color: #b0bad0;
+}
+
+body.dark-theme .featured-job-bottom {
+  border-color: #29354a;
+}
+
+body.dark-theme .featured-save-button {
+  border-color: #34405a;
+  background: #172238;
+  color: #aab4c9;
+}
+
+body.dark-theme .featured-save-button.saved {
+  border-color: #6f61d5;
+  background: #28244d;
+  color: #a99eff;
+}
+
+@media (max-width: 575.98px) {
+  .featured-heading h2 {
+    font-size: 19px;
+  }
+
+  .featured-view-all {
+    font-size: 8px;
+  }
+}

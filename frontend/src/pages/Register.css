@@ -1,0 +1,508 @@
+
+/* Register page */
+.register-page {
+  width: 100%;
+  padding: 65px 20px;
+  background:
+    radial-gradient(circle at 5% 10%, rgba(118, 82, 216, 0.08), transparent 28%),
+    #f8f8fc;
+}
+
+.register-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* Main card */
+.register-card {
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #eeeeF5;
+  border-radius: 22px;
+  box-shadow: 0 15px 50px rgba(35, 30, 75, 0.09);
+}
+
+/* Promotional panel */
+.register-promo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 55px 43px;
+  color: #ffffff;
+  background: linear-gradient(145deg, #5541c7 0%, #7652d8 55%, #9270ed 100%);
+  overflow: hidden;
+}
+
+.register-promo::before,
+.register-promo::after {
+  content: "";
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.register-promo::before {
+  width: 320px;
+  height: 320px;
+  right: -140px;
+  top: -120px;
+}
+
+.register-promo::after {
+  width: 250px;
+  height: 250px;
+  left: -120px;
+  bottom: -110px;
+}
+
+.register-promo-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.register-ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 13px;
+  margin-bottom: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.register-ai-badge i {
+  font-size: 14px;
+}
+
+.register-promo h1 {
+  max-width: 390px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 34px;
+  line-height: 1.25;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.register-promo-description {
+  max-width: 380px;
+  margin-bottom: 34px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.register-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.register-benefit {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.register-benefit i {
+  color: #b8ffdf;
+  font-size: 19px;
+}
+
+.register-promo-decoration {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 48px;
+  padding: 17px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.register-promo-decoration > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.18);
+  font-size: 20px;
+}
+
+.register-promo-decoration strong,
+.register-promo-decoration span {
+  display: block;
+}
+
+.register-promo-decoration strong {
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.register-promo-decoration span {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 11px;
+}
+
+/* Form section */
+.register-form-section {
+  padding: 43px 55px;
+  background: #ffffff;
+}
+
+.register-form-content {
+  max-width: 490px;
+  margin: 0 auto;
+}
+
+.register-back-home {
+  margin-bottom: 25px;
+}
+
+.register-back-home a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #777b8d;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.register-back-home a:hover {
+  color: #7652d8;
+}
+
+.register-heading {
+  margin-bottom: 27px;
+}
+
+.register-heading h2 {
+  margin-bottom: 8px;
+  color: #20243a;
+  font-size: 27px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.register-heading p {
+  margin: 0;
+  color: #85899a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.register-alert {
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+/* Input fields */
+.register-field {
+  margin-bottom: 17px;
+}
+
+.register-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #34384d;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.register-input-wrapper {
+  min-height: 47px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 13px;
+  border: 1px solid #e5e5ee;
+  border-radius: 9px;
+  background: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-input-wrapper:focus-within {
+  border-color: #8b70e5;
+  box-shadow: 0 0 0 3px rgba(118, 82, 216, 0.09);
+}
+
+.register-input-wrapper > i {
+  flex-shrink: 0;
+  color: #9699a9;
+  font-size: 16px;
+}
+
+.register-input-wrapper input,
+.register-input-wrapper select {
+  width: 100%;
+  min-width: 0;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #303449;
+  font-size: 12px;
+}
+
+.register-input-wrapper input::placeholder {
+  color: #a4a6b2;
+}
+
+.register-input-wrapper select {
+  cursor: pointer;
+}
+
+.register-input-wrapper select:invalid {
+  color: #a4a6b2;
+}
+
+.register-input-wrapper .input-error {
+  color: #303449;
+}
+
+.register-error {
+  margin-top: 5px;
+  color: #dc3545;
+  font-size: 11px;
+}
+
+/* Terms */
+.register-terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 21px 0;
+}
+
+.register-terms input {
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  accent-color: #7652d8;
+  cursor: pointer;
+}
+
+.register-terms label {
+  color: #777b8d;
+  font-size: 11px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.register-terms a {
+  color: #7652d8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Submit button */
+.register-submit-btn {
+  width: 100%;
+  min-height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none;
+  border-radius: 9px;
+  background: linear-gradient(110deg, #6849ce, #8b64e8);
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 6px 16px rgba(118, 82, 216, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.register-submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 9px 20px rgba(118, 82, 216, 0.25);
+}
+
+.register-submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Divider */
+.register-divider {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin: 21px 0;
+  color: #a1a3af;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.register-divider::before,
+.register-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eeeeF3;
+}
+
+/* Google button */
+.register-google-btn {
+  width: 100%;
+  min-height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border: 1px solid #e5e5ee;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #45495b;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.register-google-btn i {
+  font-size: 16px;
+}
+
+/* Sign in link */
+.register-signin-link {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 24px;
+  color: #85899a;
+  font-size: 12px;
+}
+
+.register-signin-link a {
+  color: #7652d8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.register-signin-link a:hover {
+  color: #5939b7;
+  text-decoration: underline;
+}
+
+/* Dark theme */
+body.dark-theme .register-page {
+  background: #171827;
+}
+
+body.dark-theme .register-card,
+body.dark-theme .register-form-section {
+  background: #202238;
+  border-color: #36384d;
+}
+
+body.dark-theme .register-heading h2,
+body.dark-theme .register-field label {
+  color: #f1f1f8;
+}
+
+body.dark-theme .register-heading p,
+body.dark-theme .register-back-home a,
+body.dark-theme .register-terms label,
+body.dark-theme .register-signin-link {
+  color: #aeb1c3;
+}
+
+body.dark-theme .register-input-wrapper {
+  background: #292d45;
+  border-color: #41445d;
+}
+
+body.dark-theme .register-input-wrapper input,
+body.dark-theme .register-input-wrapper select {
+  color: #ffffff;
+}
+
+body.dark-theme .register-input-wrapper input::placeholder {
+  color: #a2a5b7;
+}
+
+body.dark-theme .register-divider::before,
+body.dark-theme .register-divider::after {
+  background: #41445d;
+}
+
+body.dark-theme .register-google-btn {
+  background: #292d45;
+  border-color: #41445d;
+  color: #e5e7ef;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .register-page {
+    padding: 40px 18px;
+  }
+
+  .register-promo {
+    padding: 40px;
+  }
+
+  .register-promo h1 {
+    max-width: 600px;
+    font-size: 30px;
+  }
+
+  .register-promo-decoration {
+    margin-top: 30px;
+  }
+
+  .register-form-section {
+    padding: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .register-page {
+    padding: 25px 12px;
+  }
+
+  .register-card {
+    border-radius: 15px;
+  }
+
+  .register-promo {
+    padding: 32px 25px;
+  }
+
+  .register-promo h1 {
+    font-size: 27px;
+  }
+
+  .register-promo-description {
+    margin-bottom: 25px;
+  }
+
+  .register-promo-decoration {
+    margin-top: 28px;
+  }
+
+  .register-form-section {
+    padding: 30px 22px;
+  }
+
+  .register-heading h2 {
+    font-size: 24px;
+  }
+}

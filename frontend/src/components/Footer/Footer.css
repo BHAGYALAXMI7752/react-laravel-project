@@ -1,0 +1,249 @@
+/* ===================================
+   FOOTER MAIN SECTION
+=================================== */
+
+.footer-nav {
+  width: 100%;
+  background: #ffffff;
+  color: #25263c;
+  padding: 30px 0 15px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer-wrapper {
+  max-width: 1050px;
+}
+
+/* Footer top */
+
+.footer-top {
+  padding-bottom: 25px;
+}
+
+.footer-heading {
+  color: #25263c;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.3px;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+/* Footer links */
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  color: #737b8d;
+  font-size: 9px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-links li:hover {
+  color: #7652d8;
+}
+
+/* Newsletter */
+
+.footer-form {
+  width: 100%;
+  min-height: 38px;
+  background: #f2f2f5;
+  border: 1px solid transparent;
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.footer-form input {
+  min-width: 0;
+  background: transparent !important;
+  color: #303146 !important;
+  font-size: 9px;
+  padding-left: 10px;
+}
+
+.footer-form input::placeholder {
+  color: #9292a2;
+  opacity: 1;
+}
+
+.footer-form input:focus {
+  box-shadow: none;
+}
+
+.subscribe-btn {
+  flex-shrink: 0;
+  background: #7652d8;
+  color: #ffffff;
+  font-size: 9px;
+  font-weight: 700;
+  padding: 7px 15px;
+  border: none;
+  transition: background 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  background: #5e3cbd;
+  color: #ffffff;
+}
+
+/* Footer bottom */
+
+.footer-bottom {
+  border-color: #dedee7 !important;
+  padding-top: 12px;
+  transition: border-color 0.3s ease;
+}
+
+.footer-copy {
+  color: #858599;
+  font-size: 8px;
+}
+
+/* Social icons */
+
+.footer-social a {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dedee7;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #555a6d;
+  font-size: 11px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-social a:hover {
+  background: #7652d8;
+  border-color: #7652d8;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Legal links */
+
+.footer-legal {
+  flex-wrap: wrap;
+}
+
+.footer-legal a,
+.bcorp {
+  color: #858599;
+  font-size: 8px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-legal a:hover {
+  color: #7652d8;
+}
+
+/* ===================================
+   FOOTER DARK MODE
+=================================== */
+
+body.dark-theme .footer-nav {
+  background: #080c19;
+  color: #e5e7eb;
+}
+
+body.dark-theme .footer-heading {
+  color: #f1f2ff;
+}
+
+body.dark-theme .footer-links li {
+  color: #a5aec1;
+}
+
+body.dark-theme .footer-links li:hover {
+  color: #a99aff;
+}
+
+body.dark-theme .footer-form {
+  background: #172238;
+  border-color: #34405a;
+}
+
+body.dark-theme .footer-form input {
+  background: transparent !important;
+  color: #ffffff !important;
+}
+
+body.dark-theme .footer-form input::placeholder {
+  color: #a5aec1;
+}
+
+body.dark-theme .subscribe-btn {
+  background: #7652d8;
+  color: #ffffff;
+}
+
+body.dark-theme .subscribe-btn:hover {
+  background: #5e3cbd;
+}
+
+body.dark-theme .footer-bottom {
+  border-color: #293149 !important;
+}
+
+body.dark-theme .footer-copy,
+body.dark-theme .footer-legal a,
+body.dark-theme .bcorp {
+  color: #a5aec1;
+}
+
+body.dark-theme .footer-social a {
+  background: #172238;
+  border-color: #34405a;
+  color: #e5e7eb;
+}
+
+body.dark-theme .footer-social a:hover {
+  background: #7652d8;
+  border-color: #7652d8;
+  color: #ffffff;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+=================================== */
+
+@media (max-width: 991.98px) {
+  .footer-nav {
+    padding: 30px 0 15px;
+  }
+
+  .footer-top {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .footer-nav {
+    padding: 25px 0 15px;
+  }
+
+  .footer-heading {
+    font-size: 9px;
+  }
+
+  .footer-links li {
+    font-size: 9px;
+  }
+
+  .footer-legal {
+    justify-content: center !important;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
+}

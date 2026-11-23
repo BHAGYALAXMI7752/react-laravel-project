@@ -1,0 +1,66 @@
+
+.final-cta-section {
+  padding: 0 0 40px;
+  background: #f7f8fc;
+}
+
+.final-cta-container {
+  max-width: 1050px;
+}
+
+.final-cta-banner {
+  padding: 25px 20px;
+  border-radius: 14px;
+  background: linear-gradient(105deg, #6655e7 0%, #7649df 55%, #9144e8 100%);
+  box-shadow: 0 12px 25px rgba(94, 69, 205, .17);
+}
+
+.final-cta-banner h2 {
+  margin: 0 0 5px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 850;
+  letter-spacing: -.4px;
+}
+
+.final-cta-banner p {
+  margin: 0 0 10px;
+  color: rgba(255, 255, 255, .85);
+  font-size: 9px;
+}
+
+.final-cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #ffffff;
+  color: #6952d5;
+  font-size: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: .2s ease;
+}
+
+.final-cta-button:hover {
+  background: #eeeaff;
+  color: #4e39bd;
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+
+body.dark-theme .final-cta-section {
+  background: #080c19;
+}
+
+@media (max-width: 575.98px) {
+  .final-cta-banner {
+    padding: 25px 15px;
+  }
+
+  .final-cta-banner h2 {
+    font-size: 18px;
+  }
+}

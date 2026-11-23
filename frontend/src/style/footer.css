@@ -1,0 +1,161 @@
+
+/* Main footer */
+.footer-nav {
+  width: 100%;
+  background-color: #ffffff;
+  color: #333333;
+  border-top: 1px solid #eeeeee;
+  padding: 50px 0 25px;
+}
+
+/* Footer container */
+.footer-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer top */
+.footer-top {
+  padding-bottom: 30px;
+}
+
+/* Column headings */
+.footer-heading {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #222222;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Footer links */
+.footer-links {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  font-size: 12px;
+  color: #777777;
+  margin-bottom: 13px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-links li:hover {
+  color: #7652d8;
+}
+
+/* Newsletter form */
+.footer-form {
+  width: 100%;
+  background-color: #f3f3f5;
+}
+
+.footer-form .form-control {
+  background-color: transparent;
+  font-size: 12px;
+  padding: 11px 15px;
+  min-width: 0;
+}
+
+.footer-form .form-control::placeholder {
+  color: #999999;
+}
+
+/* Subscribe button */
+.subscribe-btn {
+  background-color: #7652d8;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 11px 18px;
+  white-space: nowrap;
+  border: none;
+}
+
+.subscribe-btn:hover {
+  background-color: #5e3cbd;
+  color: #ffffff;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  border-top: 1px solid #eeeeee;
+  padding-top: 22px;
+  margin-top: 15px;
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 11px;
+  color: #777777;
+}
+
+/* Social media icons */
+.footer-social a {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #444444;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.footer-social a:hover {
+  background-color: #7652d8;
+  color: #ffffff;
+  border-color: #7652d8;
+}
+
+/* Terms and privacy */
+.footer-legal {
+  font-size: 11px;
+  color: #777777;
+}
+
+.footer-legal a {
+  color: #777777;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  color: #7652d8;
+}
+
+.bcorp {
+  font-weight: 600;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .footer-nav {
+    padding-top: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .footer-nav {
+    padding-top: 35px;
+  }
+
+  .footer-heading {
+    margin-bottom: 15px;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+  }
+
+  .footer-legal {
+    flex-wrap: wrap;
+  }
+}

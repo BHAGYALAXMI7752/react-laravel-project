@@ -1,0 +1,192 @@
+
+/* Main navbar */
+.job-navbar {
+  width: 100%;
+  min-height: 78px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+}
+
+/* Navbar container */
+.navbar-container {
+  max-width: 1250px;
+}
+
+/* Logo */
+.job-logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: #20263a !important;
+  letter-spacing: -1px;
+}
+
+.job-logo span {
+  color: #7652d8;
+}
+
+/* Navigation links */
+.job-navbar .navbar-nav {
+  gap: 5px;
+}
+
+.job-navbar .nav-link {
+  color: #44485a;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.job-navbar .nav-link:hover,
+.job-navbar .nav-link.active {
+  color: #7652d8;
+}
+
+/* Jobs dropdown */
+.jobs-dropdown {
+  background: transparent;
+  border: none;
+}
+
+.job-navbar .dropdown-menu {
+  min-width: 180px;
+  padding: 8px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.job-navbar .dropdown-item {
+  font-size: 13px;
+  padding: 9px 12px;
+  border-radius: 6px;
+}
+
+.job-navbar .dropdown-item:hover {
+  background-color: #f3efff;
+  color: #7652d8;
+}
+
+/* Theme button */
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.theme-toggle:hover {
+  color: #7652d8;
+  border-color: #7652d8;
+}
+
+/* Login button */
+.login-btn {
+  color: #7652d8;
+  border: 1px solid #7652d8;
+  border-radius: 25px;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background-color: #f3efff;
+  color: #7652d8;
+}
+
+/* Register button */
+.register-btn {
+  background-color: #7652d8;
+  color: #ffffff;
+  border: 1px solid #7652d8;
+  border-radius: 25px;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.register-btn:hover {
+  background-color: #5e3cbd;
+  color: #ffffff;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: #171827;
+  color: #ffffff;
+}
+
+body.dark-theme .job-navbar {
+  background-color: #202238;
+  border-color: #36384d;
+}
+
+body.dark-theme .job-logo {
+  color: #ffffff !important;
+}
+
+body.dark-theme .job-navbar .nav-link {
+  color: #e0e0e8;
+}
+
+body.dark-theme .job-navbar .nav-link:hover {
+  color: #b9a2ff;
+}
+
+body.dark-theme .theme-toggle {
+  background-color: #30334b;
+  color: #ffffff;
+  border-color: #44465c;
+}
+
+/* Tablet and mobile */
+@media (max-width: 1199px) {
+  .job-navbar {
+    padding: 12px 0;
+  }
+
+  .job-navbar .navbar-collapse {
+    padding: 15px 0;
+  }
+
+  .job-navbar .navbar-nav {
+    align-items: flex-start !important;
+    gap: 0;
+  }
+
+  .job-navbar .nav-link {
+    padding: 10px 0;
+  }
+
+  .job-navbar .dropdown-menu {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .navbar-actions {
+    padding-top: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .job-logo {
+    font-size: 22px;
+  }
+
+  .navbar-actions {
+    gap: 8px !important;
+  }
+}
